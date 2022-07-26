@@ -1,0 +1,13 @@
+.bg-all{
+    background-color:  #fae5df ;
+}
+.bg-all2{
+    background-color:  #f5cac2 ;
+}
+.card-img-container{
+    height: 300px;
+}
+.img-container-home:hover{
+    transform: rotate(20deg);
+    transition:1s linear;
+}
