@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import { FaCartPlus } from 'react-icons/fa';
 const ShowGuns = ({ gun, handleAddTocart }) => {
     const { name, img, bullet, capacity, action, price, category } = gun;
     return (
@@ -25,7 +25,8 @@ const ShowGuns = ({ gun, handleAddTocart }) => {
                     <Card.Text>
                         <span className='fw-bold'>Action</span>: {action}
                     </Card.Text>
-                    <Button onClick={() => handleAddTocart(gun)} variant="dark">Add to Cart</Button>
+
+                    <Button onClick={() => handleAddTocart(gun)} variant="danger"><FaCartPlus /> Add to Cart</Button>
                 </Card.Body>
             </Card>
         </div>
